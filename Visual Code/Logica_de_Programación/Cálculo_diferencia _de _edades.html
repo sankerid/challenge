@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<h3> Cálculo diferencia de edades</h3>
+	
+	<script type="text/javascript">
+		var anios = 31;
+		var aniosAmigo = 13;
+		var diferencia = anios-aniosAmigo;
+		
+		function saltarLinea() {
+			document.write("<br>");
+		}
+		function calculoEdades(edad1, edad2) {
+			document.write(edad1-edad2+" años");
+		}
+
+		function imprimir(frase) {
+			document.write(frase);
+			saltarLinea();
+			calculoEdades(anios, aniosAmigo);
+		}
+
+		imprimir("Nuestra diferencia de edad es: ");
+
+	</script>
+	
+</body>
+</html>

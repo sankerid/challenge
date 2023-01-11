@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+<h1>PROGRAMA JUEGO DE ADIVINACION </h1>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function sorteo(numero) {
+
+    	if (numero > 0 && numero < 11) {
+            var numeroPensado = Math.floor(Math.random() * numero+1);
+            console.log(numeroPensado);
+    	}  	else{
+    		imprimir("el numero ingresado no es correcto, actualice la web para intentarlo nuevamente ");
+
+        }
+        
+        return numeroPensado;
+    }
+
+    var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"))
+    var numero = sorteo(numeroLanzado);
+    if (numeroLanzado == numero){
+            imprimir("usted acertó")
+    }    else {
+            imprimir("usted erró, el número pensado era " + numero)    
+    }
+    
+
+</script>
+</body>
+</html>	

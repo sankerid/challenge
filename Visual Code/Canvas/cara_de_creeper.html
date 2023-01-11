@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<canvas width="600" height="400" ></canvas>
+	<script type="text/javascript">
+
+		var pantalla = document.querySelector("canvas");
+		var pincel = pantalla.getContext("2d");
+
+		//Cuerpo lienzo canvas
+		pincel.fillStyle = "lightgreen"; 
+		pincel.fillRect(0,0,600,400);
+		//Funcion fillRect(Ubicacion Horizontal px, Ubicacion Vertical 0px, avanzar 600px horizontal, avanzar 400px vertical);	
+
+
+		//Cuadradro N° 1 cabeza 
+		pincel.fillStyle = "darkgreen"; 
+		pincel.fillRect(120,50,350,300);
+		//Funcion fillRect(Ubicacion Horizontal 120px, Ubicacion Vertical 50px, tamaño 350px horizontal, tamaño 300px vertical);		
+		
+		//Cuadradro N° 2 ojo izq
+		pincel.fillStyle = "black";
+		pincel.fillRect(170,100,90,90);
+		//Funcion fillRect(Ubicacion Horizontal 170px, Ubicacion Vertical 100px, tamaño 90px horizontal, tamaño 90px vertical);		
+		
+		//Cuadradro N° 3 ojo der
+		pincel.fillStyle = "black";
+		pincel.fillRect(330,100,90,90);
+		//Funcion fillRect(Ubicacion Horizontal 330px, Ubicacion Vertical 100px, tamaño 90px horizontal, tamaño 90px vertical);		
+		
+		//Cuadradro N° 4 boca 
+		pincel.fillStyle = "black";
+		pincel.fillRect(260,190,70,100);
+		//Funcion fillRect(Ubicacion Horizontal 260px, Ubicacion Vertical 190px, tamaño 70px horizontal, tamaño 100px vertical);
+		
+		//Cuadradro N° 5 baba izq
+		pincel.fillStyle = "black";
+		pincel.fillRect(220,240,40,110);
+		//Funcion fillRect(Ubicacion Horizontal 220px, Ubicacion Vertical 240px, tamaño 40px horizontal, tamaño 110px vertical);		
+		
+		//Cuadradro N° 6 baba dere
+		pincel.fillStyle = "black";
+		pincel.fillRect(330,240,40,110);
+		//Funcion fillRect(Ubicacion Horizontal 330px, Ubicacion Vertical 240px, tamaño 40px horizontal, tamaño 110px vertical);	
+		
+		</script>
+	
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+	    function saltarLinea() {
+	        document.write("<br>");    
+	        document.write("<br>");    
+	        document.write("<br>");    
+	    }  
+
+	    function imprimir(frase) {
+	        document.write(frase);
+	        saltarLinea();
+	    }
+
+		var contador = 1;
+		while(contador <= 100){
+
+			if (contador%2==0) {
+				imprimir("numero par: "+contador);
+				if (contador==100) {
+					imprimir("FIN!!!!!!!!!");
+				}
+			}
+			else{
+				imprimir("numero impar: "+contador);
+			}
+
+			contador=contador+1;
+		}
+	</script>
+	
+</body>
+</html>

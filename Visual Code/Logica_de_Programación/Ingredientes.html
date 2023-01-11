@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Recetas de Armando</title>
+</head>
+<body>
+	<h1>Recetas de Armando</h1>
+
+	 <script>
+	    var ingredientes = [];
+	    var cantidad = parseInt(prompt("¿Cuántos ingredientes vas a añadir?"));
+	    var contador = 1;
+
+	    while( contador <= cantidad) {
+	        var ingrediente = prompt("Informe el ingrediente " + contador);
+	        var condicion = false;
+	        for (var i = 0; i <= ingredientes.length; i++) {
+	        		if (ingredientes[i] == ingrediente) {
+	        			condicion = true;
+	        		}
+	        		ingredientes[i];
+	        }
+	        if (condicion == false) {
+	        	ingredientes.push(ingrediente);
+	        	contador++;
+	        }
+	        else{
+	        	document.write("El ingrediente ya se encuetra ingresado");
+	        }
+
+	    }
+
+	    console.log(ingredientes);
+
+	 </script>
+</body>
+</html>
