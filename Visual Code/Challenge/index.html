@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -13,13 +14,23 @@
             <img src="img/logo-aluraespanhol.svg" alt="">
         </div>
     </header>
-    <main class="div">
-        <input class="letra" type="textarea" placeholder="Escribe tu texto aqui">
-        <label>Tu texto</label>
+    <main>
+        <div class="area">
+            <div class="area-texto">
+                <textarea class="letra" placeholder="Escribe el texto que desea codificar"></textarea>
+            </div>
+            <div class="area-texto-codificado">
+                <label id="texto-label"></label>
+            </div>
+        </div>
+        <div class="area-botones">
+            <button id="codificar" class="codificar">Codificar</button>
+            <button id="decodificar" class="decodificar">Decodificar</button>
+        </div>
     </main>
     <footer>
-        <div>
-            
+        <div class="pie">
+            <img src="img/footer.jpeg" alt="">
         </div>
     </footer>
 </body>
